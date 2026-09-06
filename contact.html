@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visit &amp; Book — Srishti Clinic, Kalibadi Chouk, Bhilai</title>
+<meta name="description" content="Visit Srishti Clinic & Infertility Center at Kalibadi Chouk, Housing Board, Bhilai. Call 9993228024 / 9406248240, WhatsApp us, or find directions and clinic timings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LANGUAGE SELECTION DIALOG -->
+<div class="lang-dialog-overlay" id="langDialog" style="display:none;">
+  <div class="lang-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">✕</button>
+    <div class="dialog-emoji">📅</div>
+    <h2 data-translate="dialog-title">Choose Your Language</h2>
+    <p class="dialog-subtitle" data-translate="dialog-subtitle">अपनी भाषा चुनें / Select your preferred language</p>
+    <div class="lang-options">
+      <button class="lang-option" data-lang-select="en">
+        <span class="lang-emoji">🇬🇧</span>
+        <span class="lang-name">English</span>
+        <span class="lang-native">English</span>
+      </button>
+      <button class="lang-option" data-lang-select="hi">
+        <span class="lang-emoji">🇮🇳</span>
+        <span class="lang-name">हिंदी</span>
+        <span class="lang-native">Hindi</span>
+      </button>
+    </div>
+    <div class="dialog-footer">
+      <button id="dialogSkip" data-translate="dialog-skip">Skip for now</button>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#7A2E2E" stroke-width="1.4"/>
+        <path d="M20 10v20M14 15c2 2 4 2 6 0s4-2 6 0M14 25c2-2 4-2 6 0s4 2 6 0" stroke="#7A2E2E" stroke-width="1.3" stroke-linecap="round"/>
+        <circle cx="20" cy="12" r="1.6" fill="#8C6A3F"/>
+      </svg>
+      <span class="brand-text">Srishti <span>Clinic</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-translate="nav-home">Home</a>
+      <a href="index.html#specialities" data-translate="nav-specialities">Specialities</a>
+      <a href="doctors.html" data-translate="nav-doctors">Meet Your Doctors</a>
+      <a href="index.html#reviews" data-translate="nav-reviews">Reviews</a>
+      <a href="index.html#faq" data-translate="nav-faq">FAQ</a>
+      <a href="contact.html" class="active" data-translate="nav-visit">Visit &amp; Book</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" aria-label="English">🇬🇧 EN</button>
+        <button class="lang-btn" data-lang="hi" aria-label="हिंदी">🇮🇳 हिं</button>
+      </div>
+      <a href="tel:+919993228024" class="btn btn-secondary" data-translate="call-clinic">Call clinic</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="container page-hero">
+    <div class="breadcrumb"><a href="index.html" data-translate="nav-home">Home</a> / <span data-translate="visit-book">Visit &amp; book</span></div>
+    <span class="status-pill on-light" id="statusPill">
+      <span class="dot"></span>
+      <span id="statusText">Checking…</span>
+    </span>
+    <h1 data-translate="visit-book">Visit &amp; book</h1>
+    <p class="lede" data-translate="visit-lede">Find us at Kalibadi Chouk, right beside Pizza Hut in Housing Board. Call, WhatsApp, or send a booking request below and we'll confirm your slot.</p>
+  </section>
+
+  <section class="container band" style="padding-top:0;">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.1-7-11a7 7 0 0114 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div>
+            <h4 data-translate="address">Address</h4>
+            <p data-translate="address-desc">HB, Kalibadi Chouk, I/E, Beside Pizza Hut, Fauji Nagar, Housing Board, Bhilai – 490026, Chhattisgarh</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg></div>
+          <div>
+            <h4 data-translate="phone">Phone</h4>
+            <p><a href="tel:+919993228024">9993228024</a> &nbsp;·&nbsp; <a href="tel:+919406248240">9406248240</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12.04 2a9.9 9.9 0 00-8.5 15L2 22l5.2-1.4a9.9 9.9 0 004.8 1.2A9.9 9.9 0 1012.04 2z"/></svg></div>
+          <div>
+            <h4 data-translate="whatsapp">WhatsApp</h4>
+            <p><a href="https://wa.me/919993228024" target="_blank" rel="noopener" data-translate="message-us">Message us directly →</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6v6l4 2M12 22a10 10 0 100-20 10 10 0 000 20z"/></svg></div>
+          <div>
+            <h4 data-translate="timings">Timings</h4>
+            <p data-translate="timings-desc-contact">Mon–Sat: 9:30 AM–2:00 PM &amp; 5:30 PM–9:30 PM<br>Sunday: Closed</p>
+            <span class="status-pill on-light" id="statusPillTimings" style="margin-top:0.6rem;">
+              <span class="dot"></span>
+              <span id="statusTextTimings">Checking…</span>
+            </span>
+          </div>
+        </div>
+        <div class="sticky-note" data-translate="appointment-note">Appointments are recommended so you don't face last-minute waiting — use the form or WhatsApp button to request your slot.</div>
+      </div>
+
+      <div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Srishti+Clinic+Kalibadi+Chouk+Housing+Board+Bhilai&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Srishti Clinic, Kalibadi Chouk, Housing Board, Bhilai">
+          </iframe>
+        </div>
+        <div class="hero-actions" style="margin-top:1.2rem;">
+          <a href="https://www.google.com/maps/search/?api=1&query=Srishti+Clinic+Kalibadi+Chouk+Housing+Board+Bhilai" target="_blank" rel="noopener" class="btn btn-secondary" data-translate="get-directions">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="band band-alt" id="book">
+    <div class="container" style="max-width:640px;">
+      <div class="section-head" style="text-align:left;">
+        <span class="caption" data-translate="request-appointment">Request an appointment</span>
+        <h2 data-translate="book-visit-title">Book your visit</h2>
+        <p data-translate="book-desc">Fill this in and it opens WhatsApp with your details ready to send — we'll reply to confirm.</p>
+      </div>
+      <form class="booking-card" id="bookingForm">
+        <div class="field">
+          <label for="bName" data-translate="your-name">Your name</label>
+          <input type="text" id="bName" placeholder="Full name" required>
+        </div>
+        <div class="field">
+          <label for="bPhone" data-translate="your-phone">Your phone number</label>
+          <input type="tel" id="bPhone" placeholder="10-digit mobile number">
+        </div>
+        <div class="field">
+          <label for="bDoctor" data-translate="see-doctor">See which doctor?</label>
+          <select id="bDoctor">
+            <option data-translate="doc1">Dr. Savita Golan — Ayurved / Infertility / Panchakarma</option>
+            <option data-translate="doc2">Dr. N. Golan — General Physician &amp; Surgeon</option>
+            <option data-translate="doc3">Not sure, please advise</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bReason" data-translate="reason-visit">Reason for visit (optional)</label>
+          <input type="text" id="bReason" placeholder="e.g. Infertility consultation, knee pain, general checkup">
+        </div>
+        <div class="field">
+          <label for="bDate" data-translate="pref-date">Preferred date</label>
+          <input type="date" id="bDate">
+        </div>
+        <div class="field">
+          <label data-translate="pref-time">Preferred time</label>
+          <div class="time-grid" id="timeGrid">
+            <label class="time-slot"><input type="radio" name="slot" value="Morning ~10 AM"><span>~10:00 AM</span></label>
+            <label class="time-slot"><input type="radio" name="slot" value="Morning ~12 PM"><span>~12:00 PM</span></label>
+            <label class="time-slot"><input type="radio" name="slot" value="Morning ~1:30 PM"><span>~1:30 PM</span></label>
+            <label class="time-slot"><input type="radio" name="slot" value="Evening ~6 PM"><span>~6:00 PM</span></label>
+            <label class="time-slot"><input type="radio" name="slot" value="Evening ~7:30 PM"><span>~7:30 PM</span></label>
+            <label class="time-slot"><input type="radio" name="slot" value="Evening ~9 PM"><span>~9:00 PM</span></label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-whatsapp" style="width:100%; justify-content:center; margin-top:0.5rem;">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+          <span data-translate="send-request">Send request on WhatsApp</span>
+        </button>
+        <p class="caption" style="margin-top:0.8rem;"><span data-translate="prefer-talk">Prefer to talk? Call</span> <a href="tel:+919993228024" style="color:var(--color-maroon);">9993228024</a> <span data-translate="directly">directly.</span></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<a href="https://wa.me/919993228024?text=Namaste%2C%20I%27d%20like%20to%20know%20more%20about%20Srishti%20Clinic." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.08h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 01-1.26-4.4c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 012.4 5.8c0 4.52-3.68 8.2-8.15 8.26zm4.5-6.15c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.66-1.17.21-.58.21-1.08.15-1.18-.07-.11-.23-.17-.48-.29z"/></svg>
+</a>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Srishti Clinic</div>
+        <p data-translate="footer-desc">Srishti Clinic &amp; Infertility Center — general medicine and Ayurvedic Panchakarma care at Kalibadi Chouk, Housing Board, Bhilai. In service since 2003.</p>
+      </div>
+      <div>
+        <h4 data-translate="quick-links">QUICK LINKS</h4>
+        <ul>
+          <li><a href="index.html#specialities" data-translate="nav-specialities">Specialities</a></li>
+          <li><a href="doctors.html" data-translate="nav-doctors">Meet your doctors</a></li>
+          <li><a href="index.html#reviews" data-translate="nav-reviews">Patient reviews</a></li>
+          <li><a href="contact.html" data-translate="nav-visit">Visit &amp; book</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-translate="contact-title">CONTACT</h4>
+        <ul>
+          <li><a href="tel:+919993228024">9993228024</a></li>
+          <li><a href="tel:+919406248240">9406248240</a></li>
+          <li><a href="https://wa.me/919993228024" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>HB, Kalibadi Chouk, Fauji Nagar, Bhilai – 490026</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Srishti Clinic &amp; Infertility Center, Bhilai.</span>
+      <span>Beside Pizza Hut, Housing Board, Bhilai — Chhattisgarh</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== COMPLETE TRANSLATIONS FOR CONTACT PAGE =====
+const translations = {
+  en: {
+    'dialog-title': 'Choose Your Language',
+    'dialog-subtitle': 'अपनी भाषा चुनें / Select your preferred language',
+    'dialog-skip': 'Skip for now',
+    'nav-home': 'Home',
+    'nav-specialities': 'Specialities',
+    'nav-doctors': 'Meet Your Doctors',
+    'nav-reviews': 'Reviews',
+    'nav-faq': 'FAQ',
+    'nav-visit': 'Visit & Book',
+    'call-clinic': 'Call clinic',
+    'visit-book': 'Visit & book',
+    'visit-lede': 'Find us at Kalibadi Chouk, right beside Pizza Hut in Housing Board. Call, WhatsApp, or send a booking request below and we\'ll confirm your slot.',
+    'address': 'Address',
+    'address-desc': 'HB, Kalibadi Chouk, I/E, Beside Pizza Hut, Fauji Nagar, Housing Board, Bhilai – 490026, Chhattisgarh',
+    'phone': 'Phone',
+    'whatsapp': 'WhatsApp',
+    'message-us': 'Message us directly →',
+    'timings': 'Timings',
+    'timings-desc-contact': 'Mon–Sat: 9:30 AM–2:00 PM & 5:30 PM–9:30 PM<br>Sunday: Closed',
+    'appointment-note': 'Appointments are recommended so you don\'t face last-minute waiting — use the form or WhatsApp button to request your slot.',
+    'get-directions': 'Get directions',
+    'request-appointment': 'Request an appointment',
+    'book-visit-title': 'Book your visit',
+    'book-desc': 'Fill this in and it opens WhatsApp with your details ready to send — we\'ll reply to confirm.',
+    'your-name': 'Your name',
+    'your-phone': 'Your phone number',
+    'see-doctor': 'See which doctor?',
+    'doc1': 'Dr. Savita Golan — Ayurved / Infertility / Panchakarma',
+    'doc2': 'Dr. N. Golan — General Physician & Surgeon',
+    'doc3': 'Not sure, please advise',
+    'reason-visit': 'Reason for visit (optional)',
+    'pref-date': 'Preferred date',
+    'pref-time': 'Preferred time',
+    'send-request': 'Send request on WhatsApp',
+    'prefer-talk': 'Prefer to talk? Call',
+    'directly': 'directly.',
+    'footer-desc': 'Srishti Clinic & Infertility Center — general medicine and Ayurvedic Panchakarma care at Kalibadi Chouk, Housing Board, Bhilai. In service since 2003.',
+    'quick-links': 'QUICK LINKS',
+    'contact-title': 'CONTACT',
+  },
+  hi: {
+    'dialog-title': 'अपनी भाषा चुनें',
+    'dialog-subtitle': 'Choose Your Language / अपनी भाषा चुनें',
+    'dialog-skip': 'अभी छोड़ें',
+    'nav-home': 'होम',
+    'nav-specialities': 'विशेषताएं',
+    'nav-doctors': 'अपने डॉक्टरों से मिलें',
+    'nav-reviews': 'समीक्षाएं',
+    'nav-faq': 'सामान्य प्रश्न',
+    'nav-visit': 'विजिट और बुक',
+    'call-clinic': 'क्लिनिक कॉल करें',
+    'visit-book': 'विजिट और बुक',
+    'visit-lede': 'हमें कालीबाड़ी चौक, हाउसिंग बोर्ड में पिज्जा हट के ठीक बगल में खोजें। कॉल करें, व्हाट्सएप करें, या नीचे बुकिंग अनुरोध भेजें और हम आपके स्लॉट की पुष्टि करेंगे।',
+    'address': 'पता',
+    'address-desc': 'HB, कालीबाड़ी चौक, I/E, पिज्जा हट के बगल में, फौजी नगर, हाउसिंग बोर्ड, भिलाई – 490026, छत्तीसगढ़',
+    'phone': 'फोन',
+    'whatsapp': 'व्हाट्सएप',
+    'message-us': 'हमें सीधे संदेश भेजें →',
+    'timings': 'समय',
+    'timings-desc-contact': 'सोम–शनि: 9:30 AM–2:00 PM और 5:30 PM–9:30 PM<br>रविवार: बंद',
+    'appointment-note': 'अपॉइंटमेंट की सिफारिश की जाती है ताकि आपको अंतिम समय की प्रतीक्षा न करनी पड़े — अपना स्लॉट अनुरोध करने के लिए फॉर्म या व्हाट्सएप बटन का उपयोग करें।',
+    'get-directions': 'दिशा-निर्देश प्राप्त करें',
+    'request-appointment': 'अपॉइंटमेंट का अनुरोध करें',
+    'book-visit-title': 'अपनी विजिट बुक करें',
+    'book-desc': 'इसे भरें और यह आपके विवरण के साथ व्हाट्सएप खोलता है — हम पुष्टि करने के लिए जवाब देंगे।',
+    'your-name': 'आपका नाम',
+    'your-phone': 'आपका फोन नंबर',
+    'see-doctor': 'किस डॉक्टर से मिलना है?',
+    'doc1': 'डॉ. सविता गोलन — आयुर्वेद / बांझपन / पंचकर्म',
+    'doc2': 'डॉ. एन. गोलन — जनरल फिजिशियन और सर्जन',
+    'doc3': 'निश्चित नहीं, कृपया सलाह दें',
+    'reason-visit': 'विजिट का कारण (वैकल्पिक)',
+    'pref-date': 'पसंदीदा तारीख',
+    'pref-time': 'पसंदीदा समय',
+    'send-request': 'व्हाट्सएप पर अनुरोध भेजें',
+    'prefer-talk': 'बात करना पसंद करते हैं? कॉल करें',
+    'directly': 'सीधे।',
+    'footer-desc': 'सृष्टि क्लिनिक और इनफर्टिलिटी सेंटर — कालीबाड़ी चौक, हाउसिंग बोर्ड, भिलाई में सामान्य चिकित्सा और आयुर्वेदिक पंचकर्म देखभाल। 2003 से सेवा में।',
+    'quick-links': 'त्वरित लिंक',
+    'contact-title': 'संपर्क',
+  }
+};
+
+let currentLang = 'en';
+
+function showLanguageDialog() {
+  const dialog = document.getElementById('langDialog');
+  if (dialog) {
+    dialog.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function hideLanguageDialog() {
+  const dialog = document.getElementById('langDialog');
+  if (dialog) {
+    dialog.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+
+function setLanguage(lang, save = true) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  
+  document.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = translations[lang][key];
+      } else if (el.tagName === 'OPTION') {
+        el.textContent = translations[lang][key];
+      } else if (key === 'timings-desc-contact') {
+        el.innerHTML = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
+    }
+  });
+  
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+  
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('selected', btn.getAttribute('data-lang-select') === lang);
+  });
+  
+  if (save) {
+    localStorage.setItem('srishti-lang', lang);
+    localStorage.setItem('srishti-lang-set', 'true');
+  }
+  
+  hideLanguageDialog();
+  updateClinicStatus();
+}
+
+const STATUS_VARIATIONS = {
+  open: {
+    en: ['Open now', 'We are open', 'Clinic is open', 'Open for consultations'],
+    hi: ['अभी खुला है', 'हम खुले हैं', 'क्लिनिक खुला है', 'परामर्श के लिए खुला']
+  },
+  closed: {
+    en: ['Sorry, We Are Closed At The Moment :(', 'We are currently closed', 'Clinic is closed right now', 'Closed for now'],
+    hi: ['क्षमा करें, हम इस समय बंद हैं :(', 'हम वर्तमान में बंद हैं', 'क्लिनिक अभी बंद है', 'अभी बंद है']
+  },
+  opening: {
+    en: ['Opening soon', 'We open shortly', 'About to open', 'Opening in a bit'],
+    hi: ['जल्द खुलेगा', 'हम जल्द खुलेंगे', 'खुलने वाला है', 'थोड़ी देर में खुलेगा']
+  },
+  closing: {
+    en: ['Closing soon', 'We close shortly', 'About to close', 'Closing in a bit'],
+    hi: ['जल्द बंद होगा', 'हम जल्द बंद करेंगे', 'बंद होने वाला है', 'थोड़ी देर में बंद होगा']
+  }
+};
+
+function getRandomVariation(type) {
+  const variations = STATUS_VARIATIONS[type][currentLang] || STATUS_VARIATIONS[type].en;
+  return variations[Math.floor(Math.random() * variations.length)];
+}
+
+const CLINIC_HOURS = {
+  0: null,
+  1: [[9*60+30, 14*60], [17*60+30, 21*60+30]],
+  2: [[9*60+30, 14*60], [17*60+30, 21*60+30]],
+  3: [[9*60+30, 14*60], [17*60+30, 21*60+30]],
+  4: [[9*60+30, 14*60], [17*60+30, 21*60+30]],
+  5: [[9*60+30, 14*60], [17*60+30, 21*60+30]],
+  6: [[9*60+30, 14*60], [17*60+30, 21*60+30]],
+};
+
+function fmtTime(mins) {
+  let h = Math.floor(mins / 60), m = mins % 60;
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12; if (h === 0) h = 12;
+  return `${h}:${m.toString().padStart(2,'0')} ${ampm}`;
+}
+
+function updateClinicStatus() {
+  const now = new Date();
+  const day = now.getDay();
+  const mins = now.getHours() * 60 + now.getMinutes();
+  const todaySlots = CLINIC_HOURS[day];
+  
+  let status = 'closed';
+  let message = '';
+  let nextOpening = null;
+  
+  const dayNames = currentLang === 'hi' 
+    ? ['रविवार','सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार']
+    : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  
+  const todayLabel = currentLang === 'hi' ? 'आज' : 'today';
+  const tomorrowLabel = currentLang === 'hi' ? 'कल' : 'tomorrow';
+  const opensLabel = currentLang === 'hi' ? 'खुलेगा' : 'Opens';
+  const atLabel = currentLang === 'hi' ? 'पर' : 'at';
+  const untilLabel = currentLang === 'hi' ? 'तक' : 'Until';
+  const closesLabel = currentLang === 'hi' ? 'बंद होगा' : 'Closes';
+  
+  if (todaySlots) {
+    for (const [start, end] of todaySlots) {
+      if (mins < start && start - mins <= 30) {
+        status = 'opening';
+        message = `${getRandomVariation('opening')} <span class="status-note">${opensLabel} ${atLabel} ${fmtTime(start)}</span>`;
+        break;
+      }
+      
+      if (mins >= start && mins < end) {
+        if (end - mins <= 30) {
+          status = 'closing';
+          message = `${getRandomVariation('closing')} <span class="status-note">${closesLabel} ${atLabel} ${fmtTime(end)}</span>`;
+        } else {
+          status = 'open';
+          message = `${getRandomVariation('open')} <span class="status-note">${untilLabel} ${fmtTime(end)}</span>`;
+        }
+        break;
+      }
+    }
+  }
+  
+  if (status === 'closed') {
+    for (let offset = 0; offset <= 7; offset++) {
+      const d = (day + offset) % 7;
+      const slots = CLINIC_HOURS[d];
+      if (!slots) continue;
+      
+      for (const [start] of slots) {
+        if (offset === 0 && start <= mins) continue;
+        
+        const dayName = offset === 0 ? todayLabel 
+          : offset === 1 ? tomorrowLabel 
+          : dayNames[d];
+        
+        nextOpening = `${opensLabel} ${dayName} ${atLabel} ${fmtTime(start)}`;
+        break;
+      }
+      if (nextOpening) break;
+    }
+    
+    message = `${getRandomVariation('closed')} <span class="status-note">${nextOpening || ''}</span>`;
+  }
+  
+  updateStatusPill('statusPill', 'statusText', status, message);
+  updateStatusPill('statusPillTimings', 'statusTextTimings', status, message);
+}
+
+function updateStatusPill(pillId, textId, status, message) {
+  const pill = document.getElementById(pillId);
+  const text = document.getElementById(textId);
+  if (!pill || !text) return;
+  
+  pill.classList.remove('status-open', 'status-closed', 'status-opening', 'status-closing');
+  pill.classList.add(`status-${status}`);
+  text.innerHTML = message;
+}
+
+function initNavigation() {
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  const siteHeader = document.getElementById('siteHeader');
+  
+  navToggle?.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  
+  mainNav?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      navToggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      siteHeader?.classList.add('scrolled');
+    } else {
+      siteHeader?.classList.remove('scrolled');
+    }
+  });
+}
+
+function initBookingForm() {
+  const form = document.getElementById('bookingForm');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('bName').value.trim() || 'a patient';
+    const phone = document.getElementById('bPhone').value.trim();
+    const doctor = document.getElementById('bDoctor').value;
+    const reason = document.getElementById('bReason').value.trim();
+    const date = document.getElementById('bDate').value;
+    const slotInput = document.querySelector('input[name="slot"]:checked');
+    const slot = slotInput ? slotInput.value : 'a convenient time';
+    
+    let msg = `Namaste, I am ${name}`;
+    if (phone) msg += ` (${phone})`;
+    msg += `. I would like to book an appointment with ${doctor}.`;
+    if (reason) msg += ` Reason: ${reason}.`;
+    if (date) msg += ` Preferred date: ${date}.`;
+    msg += ` Preferred time: ${slot}.`;
+    
+    const url = `https://wa.me/919993228024?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const langSet = localStorage.getItem('srishti-lang-set');
+  const savedLang = localStorage.getItem('srishti-lang') || 'en';
+  
+  document.querySelectorAll('[data-lang-select]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLanguage(btn.getAttribute('data-lang-select'));
+    });
+  });
+  
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLanguage(btn.getAttribute('data-lang'));
+    });
+  });
+  
+  document.getElementById('dialogClose')?.addEventListener('click', hideLanguageDialog);
+  document.getElementById('dialogSkip')?.addEventListener('click', hideLanguageDialog);
+  
+  setLanguage(savedLang, false);
+  
+  if (!langSet) {
+    setTimeout(showLanguageDialog, 500);
+  }
+  
+  initNavigation();
+  initBookingForm();
+  
+  updateClinicStatus();
+  setInterval(updateClinicStatus, 60 * 1000);
+  
+  setInterval(() => {
+    updateClinicStatus();
+  }, 30 * 1000);
+});
+</script>
+</body>
+</html>

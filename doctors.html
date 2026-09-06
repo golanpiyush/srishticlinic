@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet Your Doctors — Srishti Clinic, Bhilai</title>
+<meta name="description" content="Meet Dr. Savita Golan (BAMS, Ayurved, Panchakarma & Agnikarma Practitioner) and Dr. N. Golan (MBBS, General Physician & Surgeon) of Srishti Clinic, Kalibadi Chouk, Bhilai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LANGUAGE SELECTION DIALOG -->
+<div class="lang-dialog-overlay" id="langDialog" style="display:none;">
+  <div class="lang-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">✕</button>
+    <div class="dialog-emoji">👨‍⚕️</div>
+    <h2 data-translate="dialog-title">Choose Your Language</h2>
+    <p class="dialog-subtitle" data-translate="dialog-subtitle">अपनी भाषा चुनें / Select your preferred language</p>
+    <div class="lang-options">
+      <button class="lang-option" data-lang-select="en">
+        <span class="lang-emoji">🇬🇧</span>
+        <span class="lang-name">English</span>
+        <span class="lang-native">English</span>
+      </button>
+      <button class="lang-option" data-lang-select="hi">
+        <span class="lang-emoji">🇮🇳</span>
+        <span class="lang-name">हिंदी</span>
+        <span class="lang-native">Hindi</span>
+      </button>
+    </div>
+    <div class="dialog-footer">
+      <button id="dialogSkip" data-translate="dialog-skip">Skip for now</button>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#7A2E2E" stroke-width="1.4"/>
+        <path d="M20 10v20M14 15c2 2 4 2 6 0s4-2 6 0M14 25c2-2 4-2 6 0s4 2 6 0" stroke="#7A2E2E" stroke-width="1.3" stroke-linecap="round"/>
+        <circle cx="20" cy="12" r="1.6" fill="#8C6A3F"/>
+      </svg>
+      <span class="brand-text">Srishti <span>Clinic</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-translate="nav-home">Home</a>
+      <a href="index.html#specialities" data-translate="nav-specialities">Specialities</a>
+      <a href="doctors.html" class="active" data-translate="nav-doctors">Meet Your Doctors</a>
+      <a href="index.html#reviews" data-translate="nav-reviews">Reviews</a>
+      <a href="index.html#faq" data-translate="nav-faq">FAQ</a>
+      <a href="contact.html" data-translate="nav-visit">Visit &amp; Book</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" aria-label="English">🇬🇧 EN</button>
+        <button class="lang-btn" data-lang="hi" aria-label="हिंदी">🇮🇳 हिं</button>
+      </div>
+      <a href="contact.html" class="btn btn-secondary" data-translate="book-visit">Book a visit</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="container page-hero">
+    <div class="breadcrumb"><a href="index.html" data-translate="nav-home">Home</a> / <span data-translate="meet-doctors-page">Meet your doctors</span></div>
+    <h1 data-translate="meet-doctors-title">Meet your doctors</h1>
+    <p class="lede" data-translate="doctors-lede">Two disciplines, one clinic. Dr. Savita Golan leads with classical Ayurvedic training focused on infertility, pain and Panchakarma; Dr. N. Golan brings 23 years of general medical practice. Patients often see both, one visit apart.</p>
+  </section>
+
+  <!-- DR SAVITA GOLAN -->
+  <section class="container profile-block">
+    <div class="profile-photo ph-sage profile-photo-placeholder">
+      <img src="assets/doctors/dr_savita_golan.jpeg" alt="Portrait of Dr. Savita Golan" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div>
+      <span class="tag tag-sage" data-translate="lead-doctor">Lead Doctor · Panchakarma &amp; Agnikarma Practitioner</span>
+      <h2 style="margin-top:0.9rem;">Dr. Savita Golan</h2>
+      <div class="profile-credentials">
+        <span class="cred-chip">B.A.M.S. (Ayurved)</span>
+        <span class="cred-chip">Reg. No. 09172 C.G.</span>
+        <span class="cred-chip" data-translate="panchakarma-specialist">Panchakarma &amp; Agnikarma specialist</span>
+      </div>
+      <p style="color:var(--color-ink-soft); max-width:60ch;" data-translate="savita-desc">Dr. Savita Golan treats through classical Ayurveda — from infertility support to instant, effective Agnikarma pain therapy. She builds each protocol around the patient's prakriti (constitution), the Ayurvedic daily rhythm, and diet, rather than a standard chart.</p>
+      <ul class="focus-list">
+        <li data-translate="savita-focus1">Female &amp; male infertility (PCOD/PCOS, tubal block, fibroid)</li>
+        <li data-translate="savita-focus2">Agnikarma for arthritis, sciatica &amp; joint pain</li>
+        <li data-translate="savita-focus3">All classical Panchakarma procedures</li>
+        <li data-translate="savita-focus4">Psoriasis &amp; other skin diseases</li>
+        <li data-translate="savita-focus5">Spinal cord conditions, piles, fissure &amp; fistula</li>
+        <li data-translate="savita-focus6">Diet, lifestyle &amp; stress management consultation</li>
+      </ul>
+      <div class="hero-actions" style="margin-top:1.8rem;">
+        <a href="contact.html" class="btn btn-primary"><span data-translate="book-savita">Book with Dr. Savita Golan</span></a>
+        <a href="https://wa.me/919993228024?text=Namaste%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20Dr.%20Savita%20Golan." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+          <span data-translate="whatsapp-btn">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule container" style="max-width:1180px;">
+
+  <!-- DR N. GOLAN -->
+  <section class="container profile-block">
+    <div class="profile-photo ph-maroon profile-photo-placeholder" style="order:2;">
+      <img src="assets/doctors/dr_narendra_golan.jpeg" alt="Portrait of Dr. N. Golan" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div style="order:1;">
+      <span class="tag tag-maroon" data-translate="general-physician">General Physician &amp; Surgeon</span>
+      <h2 style="margin-top:0.9rem;">Dr. N. Golan</h2>
+      <div class="profile-credentials">
+        <span class="cred-chip">M.B.B.S.</span>
+        <span class="cred-chip">Reg. No. 5076 (IAP) Bhopal</span>
+        <span class="cred-chip numeral" data-translate="years-practice">23 years in practice</span>
+      </div>
+      <p style="color:var(--color-ink-soft); max-width:60ch;" data-translate="narendra-desc">Dr. N. Golan sees general medical and minor surgical cases across all ages — from everyday illness and infections to post-operative and chronic condition follow-up. He works closely with Dr. Savita Golan on cases where infertility or pain treatment call for a combined medical and Ayurvedic approach.</p>
+      <ul class="focus-list">
+        <li data-translate="narendra-focus1">General medical consultation</li>
+        <li data-translate="narendra-focus2">Minor surgical procedures</li>
+        <li data-translate="narendra-focus3">Chronic condition management</li>
+        <li data-translate="narendra-focus4">Male infertility &amp; sperm-related issues</li>
+        <li data-translate="narendra-focus5">Diagnosis &amp; referral coordination</li>
+        <li data-translate="narendra-focus6">Care for patients of all ages</li>
+      </ul>
+      <div class="hero-actions" style="margin-top:1.8rem;">
+        <a href="contact.html" class="btn btn-primary"><span data-translate="book-narendra">Book with Dr. N. Golan</span></a>
+        <a href="https://wa.me/919993228024?text=Namaste%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20Dr.%20N.%20Golan." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
+          <span data-translate="whatsapp-btn">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="band band-alt">
+    <div class="container" style="max-width:760px; text-align:left;">
+      <h2 style="font-style:italic;" data-translate="quote">"Infertility is not a disease — it is a symptom. We treat what lies beneath it."</h2>
+      <p class="caption" style="margin-top:1rem;" data-translate="quote-attr">— The approach that guides every consultation at Srishti Clinic</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container" style="text-align:center;">
+      <h2 style="margin-bottom:1.2rem;" data-translate="ready-speak">Ready to speak with one of us?</h2>
+      <p class="lede" style="margin:0 auto 2rem; text-align:center;" data-translate="ready-desc">Tell us who you'd like to see and when — we'll confirm your slot on WhatsApp.</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-primary"><span data-translate="book-btn">Book an appointment</span></a>
+        <a href="https://wa.me/919993228024?text=Namaste%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20Srishti%20Clinic." target="_blank" rel="noopener" class="btn btn-whatsapp"><span data-translate="whatsapp-btn">WhatsApp us</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a href="https://wa.me/919993228024?text=Namaste%2C%20I%27d%20like%20to%20know%20more%20about%20Srishti%20Clinic." target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.08h-.01a8.2 8.2 0 01-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 01-1.26-4.4c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 012.4 5.8c0 4.52-3.68 8.2-8.15 8.26zm4.5-6.15c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.66-1.17.21-.58.21-1.08.15-1.18-.07-.11-.23-.17-.48-.29z"/></svg>
+</a>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Srishti Clinic</div>
+        <p data-translate="footer-desc">Srishti Clinic &amp; Infertility Center — general medicine and Ayurvedic Panchakarma care at Kalibadi Chouk, Housing Board, Bhilai. In service since 2003.</p>
+      </div>
+      <div>
+        <h4 data-translate="quick-links">QUICK LINKS</h4>
+        <ul>
+          <li><a href="index.html#specialities" data-translate="nav-specialities">Specialities</a></li>
+          <li><a href="doctors.html" data-translate="nav-doctors">Meet your doctors</a></li>
+          <li><a href="index.html#reviews" data-translate="nav-reviews">Patient reviews</a></li>
+          <li><a href="contact.html" data-translate="nav-visit">Visit &amp; book</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-translate="contact-title">CONTACT</h4>
+        <ul>
+          <li><a href="tel:+919993228024">9993228024</a></li>
+          <li><a href="tel:+919406248240">9406248240</a></li>
+          <li><a href="https://wa.me/919993228024" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>HB, Kalibadi Chouk, Fauji Nagar, Bhilai – 490026</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Srishti Clinic &amp; Infertility Center, Bhilai.</span>
+      <span>Beside Pizza Hut, Housing Board, Bhilai — Chhattisgarh</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== SAME TRANSLATIONS OBJECT AS INDEX.HTML =====
+const translations = {
+  en: {
+    'dialog-title': 'Choose Your Language',
+    'dialog-subtitle': 'अपनी भाषा चुनें / Select your preferred language',
+    'dialog-skip': 'Skip for now',
+    'nav-home': 'Home',
+    'nav-specialities': 'Specialities',
+    'nav-doctors': 'Meet Your Doctors',
+    'nav-reviews': 'Reviews',
+    'nav-faq': 'FAQ',
+    'nav-visit': 'Visit & Book',
+    'book-visit': 'Book a visit',
+    'meet-doctors-page': 'Meet your doctors',
+    'meet-doctors-title': 'Meet your doctors',
+    'doctors-lede': 'Two disciplines, one clinic. Dr. Savita Golan leads with classical Ayurvedic training focused on infertility, pain and Panchakarma; Dr. N. Golan brings 23 years of general medical practice. Patients often see both, one visit apart.',
+    'lead-doctor': 'Lead Doctor · Panchakarma & Agnikarma Practitioner',
+    'panchakarma-specialist': 'Panchakarma & Agnikarma specialist',
+    'savita-desc': 'Dr. Savita Golan treats through classical Ayurveda — from infertility support to instant, effective Agnikarma pain therapy. She builds each protocol around the patient\'s prakriti (constitution), the Ayurvedic daily rhythm, and diet, rather than a standard chart.',
+    'savita-focus1': 'Female & male infertility (PCOD/PCOS, tubal block, fibroid)',
+    'savita-focus2': 'Agnikarma for arthritis, sciatica & joint pain',
+    'savita-focus3': 'All classical Panchakarma procedures',
+    'savita-focus4': 'Psoriasis & other skin diseases',
+    'savita-focus5': 'Spinal cord conditions, piles, fissure & fistula',
+    'savita-focus6': 'Diet, lifestyle & stress management consultation',
+    'book-savita': 'Book with Dr. Savita Golan',
+    'general-physician': 'General Physician & Surgeon',
+    'years-practice': '23 years in practice',
+    'narendra-desc': 'Dr. N. Golan sees general medical and minor surgical cases across all ages — from everyday illness and infections to post-operative and chronic condition follow-up. He works closely with Dr. Savita Golan on cases where infertility or pain treatment call for a combined medical and Ayurvedic approach.',
+    'narendra-focus1': 'General medical consultation',
+    'narendra-focus2': 'Minor surgical procedures',
+    'narendra-focus3': 'Chronic condition management',
+    'narendra-focus4': 'Male infertility & sperm-related issues',
+    'narendra-focus5': 'Diagnosis & referral coordination',
+    'narendra-focus6': 'Care for patients of all ages',
+    'book-narendra': 'Book with Dr. N. Golan',
+    'quote': '"Infertility is not a disease — it is a symptom. We treat what lies beneath it."',
+    'quote-attr': '— The approach that guides every consultation at Srishti Clinic',
+    'ready-speak': 'Ready to speak with one of us?',
+    'ready-desc': 'Tell us who you\'d like to see and when — we\'ll confirm your slot on WhatsApp.',
+    'book-btn': 'Book an appointment',
+    'whatsapp-btn': 'WhatsApp us',
+    'footer-desc': 'Srishti Clinic & Infertility Center — general medicine and Ayurvedic Panchakarma care at Kalibadi Chouk, Housing Board, Bhilai. In service since 2003.',
+    'quick-links': 'QUICK LINKS',
+    'contact-title': 'CONTACT',
+  },
+  hi: {
+    'dialog-title': 'अपनी भाषा चुनें',
+    'dialog-subtitle': 'Choose Your Language / अपनी भाषा चुनें',
+    'dialog-skip': 'अभी छोड़ें',
+    'nav-home': 'होम',
+    'nav-specialities': 'विशेषताएं',
+    'nav-doctors': 'अपने डॉक्टरों से मिलें',
+    'nav-reviews': 'समीक्षाएं',
+    'nav-faq': 'सामान्य प्रश्न',
+    'nav-visit': 'विजिट और बुक',
+    'book-visit': 'विजिट बुक करें',
+    'meet-doctors-page': 'अपने डॉक्टरों से मिलें',
+    'meet-doctors-title': 'अपने डॉक्टरों से मिलें',
+    'doctors-lede': 'दो विधाएं, एक क्लिनिक। डॉ. सविता गोलन बांझपन, दर्द और पंचकर्म पर केंद्रित शास्त्रीय आयुर्वेदिक प्रशिक्षण के साथ नेतृत्व करती हैं; डॉ. एन. गोलन 23 वर्षों का सामान्य चिकित्सा अभ्यास लाते हैं। मरीज अक्सर दोनों को देखते हैं, एक विजिट के अंतराल पर।',
+    'lead-doctor': 'मुख्य डॉक्टर · पंचकर्म और अग्निकर्म विशेषज्ञ',
+    'panchakarma-specialist': 'पंचकर्म और अग्निकर्म विशेषज्ञ',
+    'savita-desc': 'डॉ. सविता गोलन शास्त्रीय आयुर्वेद के माध्यम से इलाज करती हैं — बांझपन सहायता से लेकर तुरंत, प्रभावी अग्निकर्म दर्द चिकित्सा तक। वह प्रत्येक प्रोटोकॉल को रोगी की प्रकृति (संविधान), आयुर्वेदिक दैनिक लय और आहार के आसपास बनाती हैं, न कि एक मानक चार्ट।',
+    'savita-focus1': 'महिला और पुरुष बांझपन (PCOD/PCOS, ट्यूबल ब्लॉक, फाइब्रॉएड)',
+    'savita-focus2': 'गठिया, साइटिका और जोड़ों के दर्द के लिए अग्निकर्म',
+    'savita-focus3': 'सभी शास्त्रीय पंचकर्म प्रक्रियाएं',
+    'savita-focus4': 'सोरायसिस और अन्य त्वचा रोग',
+    'savita-focus5': 'रीढ़ की हड्डी की स्थिति, बवासीर, फिशर और फिस्टुला',
+    'savita-focus6': 'आहार, जीवनशैली और तनाव प्रबंधन परामर्श',
+    'book-savita': 'डॉ. सविता गोलन के साथ बुक करें',
+    'general-physician': 'जनरल फिजिशियन और सर्जन',
+    'years-practice': '23 वर्षों का अभ्यास',
+    'narendra-desc': 'डॉ. एन. गोलन सभी उम्र के सामान्य चिकित्सा और छोटे सर्जिकल मामले देखते हैं — रोजमर्रा की बीमारी और संक्रमण से लेकर पोस्ट-ऑपरेटिव और पुरानी स्थिति फॉलो-अप तक। वह उन मामलों पर डॉ. सविता गोलन के साथ मिलकर काम करते हैं जहां बांझपन या दर्द उपचार के लिए संयुक्त चिकित्सा और आयुर्वेदिक दृष्टिकोण की आवश्यकता होती है।',
+    'narendra-focus1': 'सामान्य चिकित्सा परामर्श',
+    'narendra-focus2': 'छोटी सर्जिकल प्रक्रियाएं',
+    'narendra-focus3': 'पुरानी स्थिति प्रबंधन',
+    'narendra-focus4': 'पुरुष बांझपन और शुक्राणु संबंधी समस्याएं',
+    'narendra-focus5': 'निदान और रेफरल समन्वय',
+    'narendra-focus6': 'सभी उम्र के रोगियों की देखभाल',
+    'book-narendra': 'डॉ. एन. गोलन के साथ बुक करें',
+    'quote': '"बांझपन कोई बीमारी नहीं है — यह एक लक्षण है। हम इसके नीचे जो है उसका इलाज करते हैं।"',
+    'quote-attr': '— सृष्टि क्लिनिक में हर परामर्श का मार्गदर्शन करने वाला दृष्टिकोण',
+    'ready-speak': 'हममें से किसी से बात करने के लिए तैयार हैं?',
+    'ready-desc': 'हमें बताएं कि आप किससे मिलना चाहते हैं और कब — हम व्हाट्सएप पर आपके स्लॉट की पुष्टि करेंगे।',
+    'book-btn': 'अपॉइंटमेंट बुक करें',
+    'whatsapp-btn': 'व्हाट्सएप करें',
+    'footer-desc': 'सृष्टि क्लिनिक और इनफर्टिलिटी सेंटर — कालीबाड़ी चौक, हाउसिंग बोर्ड, भिलाई में सामान्य चिकित्सा और आयुर्वेदिक पंचकर्म देखभाल। 2003 से सेवा में।',
+    'quick-links': 'त्वरित लिंक',
+    'contact-title': 'संपर्क',
+  }
+};
+
+let currentLang = 'en';
+
+function showLanguageDialog() {
+  const dialog = document.getElementById('langDialog');
+  if (dialog) {
+    dialog.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function hideLanguageDialog() {
+  const dialog = document.getElementById('langDialog');
+  if (dialog) {
+    dialog.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+
+function setLanguage(lang, save = true) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  
+  document.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = translations[lang][key];
+      } else if (el.tagName === 'OPTION') {
+        el.textContent = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
+    }
+  });
+  
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+  
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('selected', btn.getAttribute('data-lang-select') === lang);
+  });
+  
+  if (save) {
+    localStorage.setItem('srishti-lang', lang);
+    localStorage.setItem('srishti-lang-set', 'true');
+  }
+  
+  hideLanguageDialog();
+}
+
+function initNavigation() {
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  const siteHeader = document.getElementById('siteHeader');
+  
+  navToggle?.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  
+  mainNav?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      navToggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      siteHeader?.classList.add('scrolled');
+    } else {
+      siteHeader?.classList.remove('scrolled');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const langSet = localStorage.getItem('srishti-lang-set');
+  const savedLang = localStorage.getItem('srishti-lang') || 'en';
+  
+  document.querySelectorAll('[data-lang-select]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLanguage(btn.getAttribute('data-lang-select'));
+    });
+  });
+  
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLanguage(btn.getAttribute('data-lang'));
+    });
+  });
+  
+  document.getElementById('dialogClose')?.addEventListener('click', hideLanguageDialog);
+  document.getElementById('dialogSkip')?.addEventListener('click', hideLanguageDialog);
+  
+  setLanguage(savedLang, false);
+  
+  if (!langSet) {
+    setTimeout(showLanguageDialog, 500);
+  }
+  
+  initNavigation();
+});
+</script>
+</body>
+</html>
